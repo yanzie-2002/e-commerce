@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title> Login page </title>
+</head>
+<body>
+
+    <div class = "dex">
+    <h1> Welcome to Gaming Shop </h1>
+
+    <br>
+
+    <label for="fname"> Enter your Username: </label>
+    <input type="text" name="" id="uname" placeholder= "Enter your username">
+
+    <br><br>
+
+    <label for="lname"> Enter your password: </label>
+    <input type="password" name="" id="pass" placeholder= "Enter your password">
+
+
+    <br><br> 
+
+
+
+    <button id = "submit"> SUBMIT </button>
+
+    </div>
+
+
+    <script>
+
+        var submit = document.getElementById('submit');
+
+        submit.addEventListener ('click', function(){
+
+
+            var first = document.getElementById('uname').value;
+            var last = document.getElementById('pass').value;
+            
+
+            if (first == ""){
+                alert("Please enter your Username!");
+            }
+
+            else if (last == ""){
+                alert("Please enter your Password!");
+            }
+
+            else if (first == "Dexter" && last == "Llorente"){
+            alert("Welcome to our Gaming Shop");
+                
+
+                localStorage.setItem("one", first);
+                localStorage.setItem("two", last);
+                
+                window.location.href = "landing-page.html";
+
+            }
+
+            else
+            {
+                alert('Access Denied!');
+            }
+                
+        });
+    </script>
+</body>
+</html>

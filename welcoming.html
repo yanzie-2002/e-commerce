@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Welcoming page!</title>
+</head>
+<body>
+
+    <div class = "dex">
+
+    <h1> Thank you for Logging In </h1>
+    <h1 id = "uno"></h1>
+    
+    <br><br>
+
+    <a href = "cart.html"><button> Proceed to our Restaurant </button></a>
+
+    </div>
+
+    <script>
+        
+        var h1 = document.getElementById('uno');
+
+        h1.innerHTML = "Hi!, " + localStorage.getItem('one');
+
+    
+    </script>
+
+</body>
+</html>

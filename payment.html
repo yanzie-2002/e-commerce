@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+
+    <title> Transaction </title>
+</head>
+<body>
+
+    <div class = "dex">
+        
+    <h1> Payment </h1>
+
+      <label > Total Bills: </label>
+      <input type="number" name="" id="txtprice">
+      
+      <br> <br>
+
+      <label> Cash: </label>
+      <input type="number" name="" id="txtquantity">
+
+      <br> <br>
+
+      <button onclick="result1()"> Check-out </button>
+    
+      <br> <br>
+
+      <p id="total">The change is, </p>
+    
+      <br><br>
+
+     <a href = "cart.html"><button> Want to order again? </button></a>
+
+      <script>
+
+
+
+var total;
+var change;
+
+function result1(){
+    alert('Thankyou for Choosing Filipino City Cuisine!')
+ var presyo=document.getElementById('txtprice').value;
+ var piraso=document.getElementById('txtquantity').value;
+  
+ total=parseFloat(presyo) - parseFloat(piraso);
+  
+var outcome= document.getElementById('total');
+outcome.innerHTML = 'The change is ' + total.toFixed(2);
+  
+}
+
+      </script>
+
+</body>
+</html>

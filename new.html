@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title> Login page </title>
+    <style>
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6ab7ff, #ffe564, #ff7edb, #82f7c2);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite; /* Updated animation duration */
+}
+
+.dex {
+    backdrop-filter: blur(3px) saturate(15%);
+    -webkit-backdrop-filter: blur(3px) saturate(15%);
+    background-color: rgba(205, 243, 249, 0.14);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666666;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    border-radius: 0;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-bottom-color: #007bff;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    backdrop-filter: blur(16px) saturate(57%);
+    -webkit-backdrop-filter: blur(16px) saturate(57%);
+    background-color: rgba(199, 85, 85, 0.35);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    backdrop-filter: blur(18px) saturate(57%);
+    -webkit-backdrop-filter: blur(18px) saturate(57%);
+    background-color: rgba(134, 197, 228, 0.35);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+:-moz-placeholder {
+    color: #cccccc;
+}
+
+::-moz-placeholder {
+    color: #cccccc;
+}
+
+:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class = "dex">
+    <h1> Welcome to Gaming Shop </h1>
+
+    <br>
+
+    <label for="fname"> Enter your Username: </label>
+    <input type="text" name="" id="uname" placeholder= "Enter your username">
+
+    <br><br>
+
+    <label for="lname"> Enter your password: </label>
+    <input type="password" name="" id="pass" placeholder= "Enter your password">
+
+
+    <br><br> 
+
+
+
+    <button id = "submit"> SUBMIT </button>
+
+    </div>
+
+
+</body>
+</html>

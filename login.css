@@ -1,0 +1,75 @@
+*{
+
+    
+    border: 50px;
+    border-radius:button;
+    text-align: center;
+
+
+
+ }
+ 
+       button{
+         width: 120px;
+         height: 40px;
+         background: black;
+         font-family:Times New Roman;
+         Color: white;
+        
+       }
+        
+       
+    h1{
+        
+    text-align: center;
+    font-family:Courier;
+    font-size: 40px;
+    color: black;
+    
+  }      
+  
+  label{
+     border:10px;
+     font-family: Courier;
+     font-size: 20px;
+    
+  }
+  
+  body{
+
+    background: url(image/resto.jpg);
+    background-color: gray;
+    height: 100vh;
+   
+  }
+
+  #dex{
+
+    position: relative;
+    max-width: 600px;
+    padding: 40px;
+    background: skyblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(50px);
+    margin-left: 260px;
+
+
+  }
+
+  *{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.dex{
+
+  position: relative;
+  max-width: 600px;
+  padding: 50px;
+  background: gainsboro;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transform: translateY(30px);
+  margin-left: 260px;
+
+
+}
